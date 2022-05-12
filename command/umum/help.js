@@ -63,7 +63,7 @@ module.exports = {
 					.join("\n\n")}\n\n`;
 			}
 			str += `typing *${prefix}help sticker* for get the details and example use`;
-		    conn.sendMessage(msg.from,{react:{text:"✅️",key:msg.key}})
+		   //conn.sendMessage(msg.from,{react:{text:"✅️",key:msg.key}})
 			await conn.sendMessage(
 				msg.from,
 				{
