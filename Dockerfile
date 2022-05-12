@@ -13,10 +13,9 @@ COPY package.json .
 RUN npm install
 RUN npm i rzkyfdlh-api
 RUN npm i ikyy@latest
-RUN npm i -g pm2
 
 COPY . .
 
 EXPOSE 5000
 
-CMD ["pm2 start", "main.js"]
+CMD ["node", "main.js"]
