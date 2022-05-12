@@ -13,7 +13,7 @@ COPY package.json .
 RUN npm install
 RUN npm i rzkyfdlh-api
 RUN npm i ikyy@latest
-RUN npm i-g pm2
+RUN npm i -g pm2
 
 COPY . .
 
