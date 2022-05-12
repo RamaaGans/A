@@ -11,11 +11,9 @@ RUN apt-get update && \
 COPY package.json .
 
 RUN npm install
-RUN npm i rzkyfdlh-api
-RUN npm i ikyy@latest
 
 COPY . .
 
 EXPOSE 5000
 
-CMD ["node", "main.js"]
+CMD ["npm", "start"]
