@@ -11,10 +11,9 @@ RUN apt-get update && \
 COPY package.json .
 
 RUN npm install
-RUN npm i -g pm2
 
 COPY . .
 
 EXPOSE 5000
 
-CMD ["node", "main.js"]
+CMD ["npm", "start"]
