@@ -4,7 +4,7 @@ module.exports = {
 	name: "join",
 	alias: ["joingroup", "invite"],
 	category: "other",
-	isOwner: true,
+	//isOwner: true,
 	desc: "Join to group using invite url.",
 	async run({ msg, conn }, { q }) {
 		// search for invite url
@@ -32,8 +32,8 @@ module.exports = {
 
 			//
 			if (check.size >= 257) return await msg.reply("Group Full");
-			if (check.size < 80)
-				return await msg.reply("The minimum requirement for group members must be more than 80 people.");
+			if (check.size < 50)
+				return await msg.reply("The minimum requirement for group members must be more than 50 people.");
 		} catch {
 			return msg.reply("Invalid invite url.");
 		}
