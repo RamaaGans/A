@@ -1,14 +1,17 @@
 {
-	"owner": ["6281515589573@s.whatsapp.net","436703061794444@s.whatsapp.net"],
-	"thumbvideo": "https://telegra.ph/file/fd849f1ecbd86e5da1983.mp4",
-	"thumb": "https://telegra.ph/file/de47696bcfde6cd747491.jpg",
-	"session": "rama.json",
-	"ownername": "RamaGans",
+	"owner": ["6281515589573@s.whatsapp.net"],
+	"thumbvideo": "https://uploader.caliph.my.id/file/hU0F0HZ9K4.mp4",
+	"thumb": "https://telegra.ph/file/d8dba7eee759ff82b35be.jpg",
+	"session": "rzkyfdlh-md.json",
+	"ownername": "Rama",
 	"self": false,
 	"limit": { "limitUser": 30, "gameLimitUser": 10, "gameLimitPremium": 30 },
-	"packInfo": { "packname": "Subscribe RamaGans Channel", "author": "Donasi For Me 0821-4210-8243" },
-	"namebot": "Bot Rama",
+	"packInfo": { "packname": "@WhatsappBOT", "author": "6281515589573" },
+	"namebot": "WhatsApp BOT",
 	"timezone": "Asia/Jakarta",
+	"email": "rassyabr79@gmail.com",
+	"instagram": "https://instagram.com/rasssya7666_",
+	"locale": "id",
 	"ignore": {
 		"directory": ["umum"]
 	}

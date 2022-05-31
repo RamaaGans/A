@@ -77,7 +77,7 @@ module.exports = handler = async (m, conn, map) => {
 		const arg = body.substring(body.indexOf(" ") + 1);
 		const args = body.trim().split(/ +/).slice(1);
 		const comand = body.trim().split(/ +/)[0];
-		q = args.join(" ");
+		let q = body.trim().split(/ +/).slice(1).join(" ");
 		const isCmd = body.startsWith(temp_pref);
 
 		//type message
@@ -147,10 +147,9 @@ module.exports = handler = async (m, conn, map) => {
 							showAdAttribution: true,
 							body:
 								config.namebot +
-								" made by " +
-								config.ownername,
+								"SUBSCRIBE YT RAMAGANS",				
 							thumbnail: await conn.getBuffer(config.thumb),
-							sourceUrl: "https://chat.whatsapp.com/DZf52GZI0yUA4izbhsjLqa,",
+							sourceUrl: "https://youtube.com/c/RamaGans",
 						},
 				  })
 				: "";
@@ -171,7 +170,7 @@ module.exports = handler = async (m, conn, map) => {
 		await conn.readMessages([msg.key]);
 
 		// anti +212
-		if (!isGroup && require("awesome-phonenumber")("+" + msg.sender.split("@")[0]).getCountryCode() == "212") {
+		/*if (!isGroup && require("awesome-phonenumber")("+" + msg.sender.split("@")[0]).getCountryCode() == "212") {
 			await conn.sendMessage(msg.from, { text: "Sorry i block you, Please read my whatsapp bio" });
 			await require("delay")(3000);
 			await conn.updateBlockStatus(msg.sender, "block");
@@ -180,7 +179,7 @@ module.exports = handler = async (m, conn, map) => {
 			});
 		}
 		if (require("awesome-phonenumber")("+" + msg.sender.split("@")[0]).getCountryCode() == "212") return;
-
+*/
 		//Prem expired
 		prem.expiredCheck(conn, msg, premium);
 
