@@ -33,7 +33,7 @@ module.exports = {
 						{ urlButton: { displayText: "Downloader", url: "https://downloader.rzkyfdlh.tech" } },
 						{ quickReplyButton: { displayText: "Audio🎶", id: "#ytmp3 " + teks } },
 						{ quickReplyButton: { displayText: "Video🎥", id: "#ytmp4 " + teks } },
-						//{ quickReplyButton: { displayText: "Dashboard📊", id: "#db" } },
+						{ quickReplyButton: { displayText: "Dashboard📊", id: "#db" } },
 					],
 				});
 				break;
