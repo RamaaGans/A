@@ -4,6 +4,7 @@ module.exports = {
 	name: "join",
 	alias: ["joingroup", "invite"],
 	category: "other",
+        isOwner: true,
 	desc: "Join to group using invite url.",
 	async run({ msg, conn }, { q }) {
 		// search for invite url
