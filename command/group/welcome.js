@@ -1,4 +1,4 @@
-const getPosition = (name, _dir) => {
+/*const getPosition = (name, _dir) => {
 	let position = null;
 	Object.keys(_dir).forEach((i) => {
 		if (_dir[i].id === name) {
@@ -35,3 +35,4 @@ module.exports = {
 		}
 	},
 };
+*/
