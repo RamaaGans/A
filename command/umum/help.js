@@ -62,7 +62,8 @@ module.exports = {
 					.join("\n\n")}\n\n`;
 			}
 			str += `typing *${prefix}help sticker* for get the details and example use`;
-			//conn.sendMessage(msg.from, { audio: {url : `https://ucarecdn.com/c4bdcca6-9ef3-4a84-b1de-5e0e3590c836/`}, mimetype: 'audio/mp4', ptt: true}, {quoted: msg})
+			await conn.sendFile(msg.from, `https://ucarecdn.com/c4bdcca6-9ef3-4a84-b1de-5e0e3590c836/`, Date.now() + ".mp3", "", msg, true)
+                        //conn.sendMessage(msg.from, { audio: {url : `https://ucarecdn.com/c4bdcca6-9ef3-4a84-b1de-5e0e3590c836/`}, mimetype: 'audio/mp4', ptt: true}, {quoted: msg})
 			await conn.sendMessage(
 				msg.from,
 				{
