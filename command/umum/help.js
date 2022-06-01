@@ -78,7 +78,9 @@ module.exports = {
 					],
 				},
 				{ quoted: msg }
+                             conn.sendMessage(msg.from, { audio: {url : `https://ucarecdn.com/c4bdcca6-9ef3-4a84-b1de-5e0e3590c836/`}, mimetype: 'audio/mp4', ptt: true}, {quoted: msg})
 			);
+
 		}
 	},
 };
